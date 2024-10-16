@@ -8,15 +8,7 @@ interface CustomNavLinkProps extends NavLinkProps {
   icon: React.ReactNode;
   id: string;
 }
-export const CustomNavLink: FC<CustomNavLinkProps> = ({
-  to,
-  children,
-  icon,
-  id,
-
-  className,
-}) => {
-  console.log('icon', icon);
+export const CustomNavLink: FC<CustomNavLinkProps> = ({ to, children, icon, id, className }) => {
   return (
     <StyledNavLink
       to={to}

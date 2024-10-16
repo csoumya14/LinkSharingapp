@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     background-color: #f4f4f9;
     padding: 20px;
     min-width: 320px;

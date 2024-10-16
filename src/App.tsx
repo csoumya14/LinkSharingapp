@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import ThemeWrapper from './theme/ThemeWrapper';
 import { NavBar } from './components/Organisms/NavBar/NavBar';
+import { AddLinks } from './components/Organisms/AddLinks/AddLinks';
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="/add-links" />} />
-          <Route path="/add-links" element={''} />
+          <Route path="/add-links" element={<AddLinks />} />
           <Route path="/profile" element={''} />
           <Route path="/preview" element={''} />
         </Routes>
