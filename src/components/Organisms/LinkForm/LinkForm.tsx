@@ -4,6 +4,9 @@ import Select from 'react-select';
 import { CustomOption } from '../../Molecules/CustomNavLink/CustomOption/CustomOption';
 import { Github } from '../../Atoms/SVGs/Github/Github';
 import { FrontendMentor } from '../../Atoms/SVGs/FrontendMentor/FrontendMentor';
+import { Button } from '../../Atoms/Button/Button';
+import { StyledButton } from './LinkForm.style';
+import { Drag } from '../../Atoms/SVGs/Drag/Drag';
 
 interface LinkFormProps {}
 
@@ -57,7 +60,9 @@ export const LinkForm: FC<LinkFormProps> = () => {
 
   return (
     <div>
-      <button onClick={handleAddNewLinkClick}>Add New Link</button>
+      <StyledButton variant="secondary" onClick={handleAddNewLinkClick}>
+        + Add New Link
+      </StyledButton>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         {fields.map((_field, index) => (
